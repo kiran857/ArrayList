@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ArrayList</title>
+</head>
+<body>
+    <style>
+        .container {
+            display: inline-block;
+            max-width: 500px;
+            height: 500px;
+            background-color: rgb(139, 207, 250);
+            opacity: 1;
+            left: 30px;
+           }
+           .container-form{
+            max-width: 500px;
+            height: 550px;
+            background-color: rgb(156, 206, 238);
+            top:0px;
+            left:5px;
+            position: absolute;
+              }
+              
+          .heading{
+               font-size: 30px;
+               background-color: black;
+               color: white;
+               text-align: center;
+               font-weight:bold;
+               padding: 10px;
+           }
+           .heading-form{
+               font-size: 30px;
+               background-color: black;
+               color: white;
+               font-weight:bold;
+               text-align: center;
+               padding-top: 10px;
+           }
+            
+           .list{
+            list-style-type: none;
+            padding: 5px;
+            margin: 10px;
+            border: 1px solid gray;
+           
+           }
+           #friend-form{
+               display: none;
+           }
+           #addBtn{
+               color: purple;
+               background-color: lightpink;
+               font-size: 15px;
+               padding: 5px;
+               margin-left: 350px;
+               cursor: pointer;
+
+           }
+           #closeForm{
+            color: red;
+            margin-left: 450px;
+            font-size: 15px;
+            cursor: pointer;
+            }
+           #name{
+               margin: 20px;
+               font-weight: bold;
+              }
+           #savedata{
+               background-color: lightpink;
+               color: purple;
+               font-size: 15px;
+               cursor: pointer;
+           }
+           
+
+           </style>
+           
+    <div class="container">
+            <div class="heading"> Friends List</div>
+           <ul id="friendList">
+            <button id="addBtn" >Add New </button>
+        
+        </ul>
+    </div>
+        <div class="container-form" id="friend-form">
+            <div class="heading-form "> Add New Friend
+                <span id="closeForm">close</span>
+                 </div>
+           <form action="">
+               <label for="name">Name:</label>
+               <input type="text" id="name">
+               <button type="submit" id="savedata">Save</button>
+           </form>
+        </div>
+    </div>        
+    
+     <script src="./arrayList.js"></script>
+</body>
+</html>
